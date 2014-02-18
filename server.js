@@ -10,7 +10,7 @@ var http=require('http');
 var fs = require('fs');
 
 http.createServer(function(req,res) {
-	fs.readFile('index.html',function(err,data){
+	fs.readFile('index.htm',function(err,data){
 		res.writeHead(200);
 		res.end(data);
 	});
